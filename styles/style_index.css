@@ -1,0 +1,340 @@
+
+:root{
+    --primary: rgb(177, 20, 20);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    width: 100%;
+    font-size:0.5vw;
+    font-family:monospace;
+    letter-spacing: 0.1mm;
+    font-weight: 100;
+}
+
+
+
+html{
+    scroll-padding-top: 190px; 
+}
+
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 2.4rem;
+}
+
+/*Clases usadas en divs para hacer Barras divisoras --> | <-- */
+.small-div-vertical-white{
+    height: 5vw;
+    background-color: azure;
+}
+
+.medium-div-vertical-white{
+    height: 10vw;
+    background-color: azure;
+}
+
+.large-div-vertical-white{
+    height: 20vw;
+    background-color: azure;
+}
+
+.small-div-vertical-black{
+    height: 5vw;
+    background-color: black;
+}
+
+.medium-div-vertical-black{
+    height: 10vw;
+    background-color: black;
+}
+
+.large-div-vertical-black{
+    height: 20vw;
+    background-color: black;
+}
+
+.small{
+    width: 1px;
+}
+
+.medium{
+    width: 3px;
+}
+
+.large{
+    width: 5px;
+}
+
+.div-division{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.division-horizontal-black{
+    background-color: black;
+    height: 1px;
+    width: 15vw;
+}
+
+.division-horizontal-white{
+    background-color: black;
+    height: 1px;
+    width: 15vw;
+}
+
+.horizontal-small{
+    width: 10vw;
+}
+
+.horizontal-medium{
+    width: 30vw;
+}
+
+.horizontal-large{
+    width: 50vw;
+}
+
+.thinner{
+    height: 1px;
+}
+
+.thin{
+ height: 3px;
+}
+
+.thick{
+ height: 5px;
+}
+
+
+
+.division-vertical-large{
+    width: 25vw;
+}
+/*                     */
+
+
+/*   Header y navbar   */
+.fa-bars{
+    display: none;
+}
+
+.button{
+    border: solid 1px ;
+    padding: 0 0.5em;
+
+}   
+.primary{
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    width: -webkit-fill-available;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    z-index: 999;
+}
+
+.navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    height: 100px;
+    padding: 15px;
+}
+
+
+
+header img{
+   padding: 0 0 0 40px;
+    object-fit: contain;
+    max-width: 200px;
+}
+
+.navbar > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li a:hover{
+    color: var(--primary) ;
+    transition: ease-in 200ms;
+}
+
+.navbar ul li .division{
+    height: 50px;
+}
+
+.navbar ul li:nth-child(1){
+    margin-right: 30px;
+}
+.navbar ul li a:nth-child(1):hover{
+    background-color: rgb(255, 255, 255);
+    color: var(--primary)
+}
+
+/*  el hero del tiempo */
+.hero{
+    
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0px 0px;
+    padding: 300px 0px 200px ;
+    text-align: center;
+    word-spacing: 0%;
+}
+
+.hero b{
+    font-size: inherit;
+    font-weight: 1000;
+    color: var(--primary);
+}
+
+.hero h1{
+    margin: 40px 0;
+
+}
+.hero-description{
+    max-width: 70vw;
+}
+
+.servicios{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 200px 0;
+}
+.servicios-features{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    min-width: 10vw;
+    max-width: 20vw;
+    text-align: center;
+}
+
+.servicios-features img{
+    min-width: 10vw;
+    max-width: 20vw;
+    margin: 0 0 40px;
+}
+
+.servicios-features-desc{
+    margin: 20px 0;
+}
+
+.fa-envelope{
+    font-size: 100px;
+}
+
+.fa-whatsapp{
+    font-size: 100px;
+}
+
+/*    Contacto    */
+
+.contacto{
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto-desc p{
+    margin: 10px 0;
+}
+
+.contacto-logo{
+    display: flex;
+    justify-content:space-evenly;
+    width: 400px;
+    padding: 20px 0;
+}
+
+
+/*    Footer     */
+footer{
+    background-color: black;
+    color: white;
+    padding: 100px 0;
+    min-height: 200px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+footer p{
+    margin: 10px 0;
+
+}
+
+footer img{
+    object-fit: contain;
+    width: 200px;
+    margin: 0 0 40px;
+}
+/**/
+
+.precios{
+    display: flex;
+    justify-content:space-around;
+    margin: 200px 0;   
+}
+
+.precios-container{
+    display: flex;
+    text-align: center;
+    width: 20vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px;
+    border-radius: 20px;
+}
+
+.precios-container h2{
+    margin: 20px 0;
+}
+.precios-container p{
+    margin: 10px 0;
+}
+
